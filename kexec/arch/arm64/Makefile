@@ -23,7 +23,10 @@ arm64_PHYS_TO_VIRT =
 dist += $(arm64_KEXEC_SRCS) \
 	kexec/arch/arm64/Makefile \
 	kexec/arch/arm64/kexec-arm64.h \
-	kexec/arch/arm64/crashdump-arm64.h
+	kexec/arch/arm64/crashdump-arm64.h \
+	kexec/arch/arm64/include/arch/options.h \
+	kexec/arch/arm64/image-header.h \
+	kexec/arch/arm64/iomem.h
 
 ifdef HAVE_LIBFDT
 
